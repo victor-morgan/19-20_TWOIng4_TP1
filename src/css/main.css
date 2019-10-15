@@ -1,0 +1,249 @@
+/* ---------------------------Header------------------------------ */
+.header {
+    width: 100%;   /* largeur */
+    margin-left: 0;
+    margin-right: 0;
+    height: 70px; /* taille */
+    line-height: 70px; /* hauteur de ligne, pour centrer */
+    background-color: black;
+    position: fixed; /* header suit le scroll */
+    top: 0; /* pour qu'il se fixe en haut */ 
+    z-index: 999; /* pour que le header soit au dessus de tout */
+    text-decoration: none;
+}
+
+.header .header-logo {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    float: left; /* pour le placer vers la gauche */
+    margin-left: 30px; /* pour eloigner le logo un peu du bord */
+    text-decoration: none;
+}
+
+.header .header-menu {  
+    float: right;
+    margin-right: 30px; 
+}
+
+.header .header-menu a {  
+    margin-right: 25px;   /* espacement entre elements du menu */
+    color: white;
+    transition: color .3s; /* pour faire apparaitre lentement la couleur des elements de la navbar */
+}
+
+.header .header-menu a:hover {   /* quand on passe le curseur sur elements du menu */
+    color: rgb(160, 160, 160);
+    text-decoration: none;
+    
+}
+
+/* ---------------------------Banner------------------------------ */
+
+.banner .banner-image {
+    position: relative;
+    margin-top: -175px;
+}
+
+.banner .banner-content {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 65%; /* pour réhausser le texte de la banner */
+    left: -2%;
+    /* margin-left: -25px; */
+}
+
+.banner .banner-content h1,
+.banner .banner-content h2 {
+    color: white;
+}
+
+/* ---------------------------qui suis-je------------------------------ */
+
+/* .about {
+    padding-top: 50px;
+    padding-bottom: 0px;
+    padding-left: 50px;
+} */
+
+.profile-img {
+    height: 300px;
+    width: 200px;
+}
+
+/* ---------------------------Infos------------------------------ */
+
+.about .about-single-elementt {
+    margin-left: 0px;
+    margin-top: 50px;
+    position: absolute;
+}
+
+.about .about-single-element .icon {
+    font-size: 100px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.steve {
+    margin-right: -100px;
+    padding-left: 70px;
+    padding-top: 20px;
+    transition: transform .5s;
+}
+
+.steve:hover {
+    transform: scale(1.1) rotate(10deg); /* animation */
+}
+
+/* ---------------------------VIDEO------------------------------ */
+
+.video {
+    width: 50%;
+    margin-top: 50px;
+}
+
+.bellow-video {
+    text-align: center;
+}
+
+/* ---------------------------FOOTER------------------------------ */
+
+.footer {
+    height: 70px; /* taille */
+    line-height: 70px; 
+ background-color: #8c8c8c;
+ padding: 0rem 5rem 3rem;
+
+ 
+}
+
+
+/* ---------------------------FORMULAIRE------------------------------ */
+
+
+.contact {
+    margin-left: 100px;
+    margin-right: 100px;
+    
+}
+
+
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 15px;  
+    border: 1px solid black; /* bord des zones de textes */
+   /*  border-radius: 4px;       pour arrondir les bords */
+    box-sizing: border-box; /* pour que tout reste bien en place */
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical /* pour changer la taille de textarea que de maniere verticale */
+  }
+  
+  input[type=email] {
+    width: 100%; 
+    padding: 15px;  
+    border: 1px solid black;
+    box-sizing: border-box; /* pour que tout reste bien en place */
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+  }
+
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: grey;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: grey;
+  }
+  
+  /* container gris */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  /* ---------------------------CV------------------------------ */
+
+  .titrepage {
+      text-align: center;
+      color: #9696964d;
+  }
+
+  .resume {
+      padding-top: 30px;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-bottom: 30px;
+      background-color: #f2f2f2;
+      margin-left: 100px;
+      margin-right: 100px;
+      margin-top: 30px;
+  }
+
+  .resume h3 {
+padding-bottom: 10px;
+  }
+
+  .timeline {
+      margin-right: 30px;
+      margin-left: 30px;
+      list-style-type: none;
+      position: relative;
+  }
+
+  .timeline:before {
+    content: '';
+    background: black;
+    display: inline-block;
+    position: absolute;
+    left: -5px;
+    width: 2px;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .timeline li:before {
+      content: '';
+      background-color: #fff;
+      display: inline-block;
+      position: absolute;
+      border-radius: 50%;
+      border: 3px solid black;
+      left: -14px;
+      width: 20px;
+      height: 20px;
+      z-index: 1;
+  }
+
+  .timeline li {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      margin-left: 20px;
+      background:white;
+  }
+
+  .timeline li h4 {
+      background-color: black;
+      color: white;
+    padding: 2px 0 2px 20px;
+  }
+
+  .timeline li h4 span {
+      font-weight: bold;
+      color: #ccc;
+  }
+
+  /* .progress {
+      width: 50%;
+      margin-left: 300px;
+      background-color: black;
+  } */
